@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity(name = "product")
-@Table(name = "appointment")
+@Table(name = "product")
 public class Product {
     @Id
     @SequenceGenerator(
