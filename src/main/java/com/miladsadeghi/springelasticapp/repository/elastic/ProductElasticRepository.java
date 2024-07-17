@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ProductElasticRepository extends ElasticsearchRepository<ProductElastic,String> {
-   // @Query("select a from appointment a where a.appointmentCode = :appointmentCode ")
    @Query("{\"match\": {\"name\": {\"query\": \"?0\"}}}")
    List<ProductElastic> findProductElasticByName(String keyword);
 }
